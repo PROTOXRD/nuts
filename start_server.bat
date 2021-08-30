@@ -1,0 +1,5 @@
+set GITHUB_USERNAME=PROTOXRD&&^
+set GITHUB_TOKEN=###GITHUB TOKEN HERE###&&^
+set GITHUB_REPO=PROTOXRD/XCollectCT&&^
+set PORT=8082&&^
+npm run start
