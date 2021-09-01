@@ -16,6 +16,9 @@ steps:
   displayName: 'Install Node.js'
   env:
     GITHUB_TOKEN: ${github-token}
+    GITHUB_USERNAME: PROTOXRD
+    GITHUB_REPO: PROTOXRD/XCollectCT
+    PORT: 80
 
 - script: |
     npm install
