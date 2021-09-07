@@ -52,7 +52,6 @@ myNuts.before('api', function(access, next) {
 // Log download
 myNuts.before('download', function(download, next) {
     console.log('download', download.platform.filename, "for version", download.version.tag, "on channel", download.version.channel, "for", download.platform.type);
-    console.log(download);
     next();
 });
 myNuts.after('download', function(download, next) {
@@ -121,7 +120,7 @@ myNuts.init()
 
 // Start the HTTP server
 .then(function() {
-    var server = app.listen(process.env.PORT || 5000, "localhost", function () {
+    var server = app.listen(process.env.PORT || 5000, process.env.HOSTNAME, function () {
         var host = server.address().address;
         var port = server.address().port;
 
